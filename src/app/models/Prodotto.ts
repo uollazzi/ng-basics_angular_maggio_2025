@@ -1,6 +1,6 @@
 export type Prodotto = {
-  id: number;
   nome: string;
+  desc: string;
   prezzo: number;
-  inOfferta: boolean;
+  foto: string;
 }

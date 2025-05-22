@@ -1,7 +1,19 @@
+@if (prodotto) {
 <div class="card" style="width: 18rem">
+  <img [src]="prodotto.foto" class="card-img-top" [alt]="prodotto.nome" />
   <div class="card-body">
-    <h5 class="card-title">Bici Rossa</h5>
-    <h6 class="card-subtitle mb-2 text-body-secondary">€ 120,99</h6>
-    <p class="card-text">Bici da corsa</p>
+    <h5
+      class="card-title"
+      [ngClass]="{ rosso: prodotto.prezzo > 100, verde: prodotto.prezzo < 20 }"
+    >
+      {{ prodotto.nome | uppercase }}
+    </h5>
+    <h6 class="card-subtitle mb-2 text-body-secondary">
+      {{ prodotto.prezzo | currency : "EUR" : "code" : "1.2-2" }}
+    </h6>
+    <p class="card-text">{{ prodotto.desc }}</p>
   </div>
 </div>
+} @else {
+<p>Prodotto non inserito</p>
+}

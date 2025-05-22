@@ -19,18 +19,18 @@ export class HeaderComponent {
   prodotto?: Prodotto;
 
   bici?: Prodotto = {
-    id: 1,
     nome: "Bicicletta",
     prezzo: 120,
-    inOfferta: false
+    desc: "Test",
+    foto: ""
   };
 
   esempio() {
     this.prodotto = {
-      id: 1,
+      desc: "Test",
+      foto: "",
       nome: "Bicicletta",
       prezzo: 120,
-      inOfferta: false
     };
 
     let eta = 16;

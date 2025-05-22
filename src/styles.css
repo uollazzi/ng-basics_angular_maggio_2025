@@ -3,3 +3,13 @@
 h1 {
   color: green;
 }
+
+.verde {
+  background-color: darkgreen;
+  color: wheat;
+}
+
+.rosso {
+  background-color: brown;
+  color: burlywood;
+}
