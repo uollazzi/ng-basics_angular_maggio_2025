@@ -12,6 +12,7 @@
       {{ prodotto.prezzo | currency : "EUR" : "code" : "1.2-2" }}
     </h6>
     <p class="card-text">{{ prodotto.desc }}</p>
+    <button class="btn btn-primary" (click)="saluta()">Saluta</button>
   </div>
 </div>
 } @else {

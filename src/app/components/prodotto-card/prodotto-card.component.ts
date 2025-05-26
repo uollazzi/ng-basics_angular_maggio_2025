@@ -11,4 +11,8 @@ import { CurrencyPipe, NgClass, UpperCasePipe } from '@angular/common';
 export class ProdottoCardComponent {
   @Input()
   prodotto?: Prodotto;
+
+  saluta() {
+    alert("Ciao");
+  }
 }
