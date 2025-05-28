@@ -35,6 +35,12 @@ export class AppComponent {
       desc: "Ad aria",
       prezzo: 10,
       foto: "https://picsum.photos/300/200"
+    },
+    {
+      nome: "Pallone",
+      desc: "Ad aria",
+      prezzo: 10,
+      foto: "https://picsum.photos/300/200"
     }
   ]
 

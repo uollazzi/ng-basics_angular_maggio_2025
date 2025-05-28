@@ -1,7 +1,9 @@
 <h3>{{ titolo }}</h3>
 <div class="d-flex flex-wrap gap-4">
   @for (p of prodotti; track p.nome) {
-  <app-prodotto-card [prodotto]="p"></app-prodotto-card>
+  <app-prodotto-card
+    (prodottoSelezionato)="selezionaProdotto($event)"
+  ></app-prodotto-card>
   }
 </div>
 <hr />
